@@ -2,11 +2,8 @@
 
 public static class Extensions
 {
-    public static void Print(this IEnumerable<int> array)
+    public static string JoinStr(this IEnumerable<int> array, char separator = ',')
     {
-        foreach (var num in array)
-        {
-            Console.Write($"{num} ");
-        }
+        return string.Join(separator, array);
     }
 }

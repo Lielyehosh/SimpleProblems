@@ -1,8 +1,5 @@
-﻿using SimpleProblems.Solvers.ZigZag;
-
-Console.WriteLine("Simple problems & solutions");
+﻿Console.WriteLine("Simple problems & solutions");
 
 
-// ZigZag Array
-var zigZag = new ZigZagArrayExamples();
-zigZag.RunExamples();
+// new SimpleProblems.Solvers.Amazon.ZigZag.Examples().RunExamples();
+new SimpleProblems.Solvers.Amazon.SubArrayWithGivenSum.Examples().RunExamples();

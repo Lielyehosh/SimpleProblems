@@ -1,8 +1,8 @@
 ﻿using SimpleProblems.Extensions;
 
-namespace SimpleProblems.Solvers.ZigZag;
+namespace SimpleProblems.Solvers.Amazon.ZigZag;
 
-public class ZigZagArrayExamples
+public class Examples
 {
     private readonly IList<int[]> _examples = new List<int[]>()
     {
@@ -14,13 +14,12 @@ public class ZigZagArrayExamples
     {
         foreach (var example in _examples)
         {
-            example.Print();
-            ZigZagArraySolver.Solve(example, example.Length);
-            if (ZigZagArraySolver.Validate(example, example.Length))
+            Console.WriteLine();
+            Console.WriteLine($"Input: Array=[{example.JoinStr()}]");
+            Solver.Solve(example, example.Length);
+            if (Solver.Validate(example, example.Length))
             {
-                Console.WriteLine();
-                Console.WriteLine("Solved");
-                example.Print();
+                Console.WriteLine($"Output: Array=[{example.JoinStr()}]");
             }
             else
             {

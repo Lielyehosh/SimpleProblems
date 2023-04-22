@@ -1,4 +1,4 @@
-﻿namespace SimpleProblems.Solvers.ZigZag;
+﻿namespace SimpleProblems.Solvers.Amazon.ZigZag;
 
 /**
  * Source: https://practice.geeksforgeeks.org/problems/convert-array-into-zig-zag-fashion1638/1?page=1&company[]=Amazon&curated[]=1&sortBy=submissions
@@ -6,7 +6,7 @@
  * arr[0] < arr[1]  > arr[2] < arr[3] > arr[4] < . . . . arr[n-2] < arr[n-1] > arr[n].
  * NOTE: If your transformation is correct, the output will be 1 else the output will be 0. 
  */
-public class ZigZagArraySolver
+public class Solver
 {
     public static void Solve(int[] array, int N)
     {
